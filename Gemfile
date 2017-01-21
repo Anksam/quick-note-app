@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-
 ruby '2.3.1'
 gem 'rails', '~> 5.0.1'
 gem 'mysql2', '>= 0.3.18', '< 0.5'
@@ -9,6 +8,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
+gem 'devise', '~> 4.2'
+gem 'haml', '~> 4.0.7'
+gem 'simple_form', '~> 3.4'
 
 group :development, :test do
   gem 'byebug', platform: :mri
