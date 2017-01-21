@@ -1,0 +1,21 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password: dbpassword
+  socket: /var/run/mysqld/mysqld.sock
+
+development:
+  <<: *default
+  database: FileNote_development
+
+test:
+  <<: *default
+  database: FileNote_test
+
+production:
+  <<: *default
+  database: FileNote_production
+  username: FileNote
+  password: <%= ENV['FILENOTE_DATABASE_PASSWORD'] %>
