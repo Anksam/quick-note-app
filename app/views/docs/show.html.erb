@@ -1,9 +1,0 @@
-<h3><%= @doc.title %></h3><p>
-<h4><%= @doc.content %><h4>
-  <p>
-    <h5>
-      <%= link_to "Back", docs_path %>|
-      <%= link_to "Edit", edit_doc_path(@doc) %>|
-      <%= link_to "Delete", doc_path(@doc), method: :delete, data: { confirm: "Are you sure?" } %>
-    </h5>
-  </p>

@@ -8,11 +8,11 @@ default: &default
 
 development:
   <<: *default
-  database: FileNote_development
+  database: FN_development
 
 test:
   <<: *default
-  database: FileNote_test
+  database: FN_test
 
 production:
   <<: *default

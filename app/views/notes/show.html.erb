@@ -1,0 +1,9 @@
+<h3><%= @note.title %></h3><p>
+<h4><%= @note.content %><h4>
+  <p>
+    <h5>
+      <%= link_to "Back", note_path %>|
+      <%= link_to "Edit", edit_note_path(@note) %>|
+      <%= link_to "Delete", note_path(@note), method: :delete, data: { confirm: "Are you sure?" } %>
+    </h5>
+  </p>
