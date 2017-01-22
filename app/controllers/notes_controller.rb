@@ -1,6 +1,7 @@
 class NotesController < ApplicationController
   before_action :find_doc, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, only: [:edit, :update, :destroy]
+  before_action :check_user, only: [:edit, :update, :destroy]
 
   def index
     @notes = Note.where(user_id: current_user)
@@ -46,6 +47,12 @@ class NotesController < ApplicationController
 
    def note_params
      params.require(:note).permit(:title, :content)
+   end
+
+   def check_user
+      if current_user != @note.user
+        redirect_to root_url, alert: "You are not authorized to destroy this listing"
+      end
    end
 
 end
