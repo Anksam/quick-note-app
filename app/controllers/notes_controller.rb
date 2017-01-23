@@ -50,7 +50,7 @@ class NotesController < ApplicationController
    end
 
    def check_user
-      if current_user != @note.user
+      if current_user.id != @note.user_id
         redirect_to root_url, alert: "You are not authorized to destroy this listing"
       end
    end

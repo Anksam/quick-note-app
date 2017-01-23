@@ -1,0 +1,43 @@
+body {
+    background-color: $webpage-bg;
+}
+
+.navbar-default {
+    background-color: $white;
+      .navbar-brand {
+        color: $black;
+        font-weight: 550;
+        font-size: 2em;
+        font-family: 'Amaranth', sans-serif;
+    }
+}
+
+.nav > li > a:hover{
+    background-color: $black;
+}
+
+.show-wrap {
+ 	margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.show-wrap-bg {
+	max-width: 830px;
+	padding: 10px 20px 20px;
+	margin: 0 auto;
+	background-color: #fff;
+	border: 1.5px solid rgba(0,0,0,0.1);
+}
+
+.index-wrap {
+ 	margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.index-wrap-bg {
+	max-width: 830px;
+	padding: 10px 20px 30px;
+	margin: 0 auto;
+	background-color: #fff;
+	border: 1.5px solid rgba(0,0,0,0.1);
+}
