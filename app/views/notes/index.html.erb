@@ -1,18 +1,11 @@
-<div class = "col-md-3">
-</div>
-
-<div class = "col-md-9">
-  <div class = "index-wrap">
-    <% @notes.each do |note| %>
-      <div class = "index-wrap-bg">
-        <h3 class = "heading-font"><b><%= note.title %></b></h3><hr>
-         <p><h6 class = "date-description content-font">
-          <%= time_ago_in_words(note.created_at) %> ago <br/><br/>
-         </p></h6>
-         <p><h5 class = "content-font">
-          <%= truncate(note.content, length:250) %>..<%=%> <%= link_to "read more", note %>
-        </h5></p><hr>
-      </div><br>
-    <% end %>
-  </div>
-</div>
+<% @notes.each do |note| %>
+  <div class = "jumbotron">
+    <h3 class = "heading-font"><b><%= note.title %></b></h3><hr>
+     <p><h6 class = "date-description content-font">
+      <%= time_ago_in_words(note.created_at) %> ago <br/><br/>
+     </p></h6>
+     <p><h5 class = "content-font">
+      <%= truncate(note.content, length:250) %>..<%=%> <%= link_to "read more", note %>
+    </h5></p><hr>
+  </div><br>
+<% end %>
