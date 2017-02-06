@@ -11,7 +11,6 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'devise', '~> 4.2'
 gem 'simple_form', '~> 3.4'
-gem "bourbon"
 
 group :development, :test do
   gem 'byebug', platform: :mri

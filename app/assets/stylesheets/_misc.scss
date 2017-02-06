@@ -12,3 +12,16 @@ body {
         font-size: 2em;
     }
 }
+
+textarea {
+  min-height: 13em;
+  max-height: 15em;
+  min-width: 70%;
+  max-width: 100%;
+  border: 1px solid #4fbcea;
+}
+
+.welcome {
+  margin-top: 190px;
+  font-family: 'Amaranth', sans-serif;
+}
